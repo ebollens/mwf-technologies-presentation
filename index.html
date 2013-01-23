@@ -1,0 +1,398 @@
+<!doctype html>  
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Mobilization Frameworks and Tools</title>
+        <meta name="description" content="">
+        <meta name="author" content="Eric Bollens Rose Rocchio">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/theme/default.css">
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            // If the query includes 'print-pdf' we'll use the PDF print sheet
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+        <!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+            <!-- Used to fade in a background when a specific slide state is reached -->
+            <div class="state-background"></div>
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+            
+                <section>
+                    <hgroup>
+                        <h2>Mobilization Frameworks and Tools</h2>
+                        <h4>MWF, WebBlocks, App Sharing, OPT and Ohmage</h4>
+                    </hgroup>
+                    <footer>
+                        <p>Eric Bollens / <a href="mailto:ebollens@ucla.edu">ebollens@ucla.edu</a> / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens</a></p>
+                        <p>Rose Rocchio / <a href="mailto:rrocchio@oit.ucla.edu">rrocchio@oit.ucla.edu</a> / <a href="http://twitter.com/RoseRocchio" target="_blank">@RoseRocchio</a></p>
+                    </footer>
+                </section>
+                
+                <section>
+                    <h2>Overview</h2>
+                    <ol>
+                        <li class="fragment">Reaching your audience with a <strong class="highlight">mobile strategy</strong></li>
+                        <li class="fragment">Building mobile apps with <strong class="highlight">MWF</strong></li>
+                        <li class="fragment">Framework as a service with <strong class="highlight">CENIC-MWF</strong></li>
+                        <li class="fragment">Going responsive with <strong class="highlight">WebBlocks</strong></li>
+                        <li class="fragment">Empowering users with an <strong class="highlight">App Sharing Environment</strong></li>
+                        <li class="fragment">BYOD response collection with <strong class="highlight">OPT</strong> and <strong class="highlight">Ohmage</strong></li>
+                    </ol>
+                </section>
+                
+                <section>
+                    <section>
+                        <div class="feature" style="margin-top: 180px;">
+                            <h2>The Mobile Landscape</h2>
+                            <p>is pervasive, growing and evolving.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Growth in Mobile</h2>
+                        <p class="fragment">Mobile is soon to overtake the desktop in usage</p>
+                        <p class="fragment">Over 75% of students have an internet-capable mobile device</p>
+                        <p class="fragment">Unfortunately, mobile isn't a homogenous environment</p>
+                        <ul>
+                            <li class="fragment">Operating systems</li>
+                            <li class="fragment">Browsers</li>
+                            <li class="fragment">Dimensions</li>
+                        </ul>
+                        <p class="fragment"><strong>Evolving strategies for addressing this landscape</strong></p>
+                    </section>
+                    <section>
+                        <h2>The Native App</h2>
+                        <ul>
+                            <li class="fragment good">Rich set of features</li>
+                            <li class="fragment good">Centralized distribution platforms</li>
+                            <li class="fragment bad">Development specific to OS and device</li>
+                            <li class="fragment bad">Varied paradigms and architectures</li>
+                            <li class="fragment bad">Rise and fall of native platforms</li>
+                            <li class="fragment bad">Manual updates</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>The Mobile Web App</h2>
+                        <ul>
+                            <li class="fragment good">Single established platform</li>
+                            <li class="fragment good">Existing paradigms and arcitecture</li>
+                            <li class="fragment good">Automatic updates</li>
+                            <li class="fragment bad">Mixed support between devices</li>
+                            <li class="fragment bad">New and evolving API</li>
+                            <li class="fragment bad">No central distribution platform</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Solving Challenges of the Mobile Web</h2>
+                        <div class="fragment">
+                            <p>Mixed support between devices</p>
+                            <ul>
+                                <li class="fragment">Fully compatible markup standard</li>
+                                <li class="fragment">Framework enhances and degrades experience</li>
+                                <li class="fragment">No device-by-device planning</li>
+                            </ul>
+                            <p>New and evolving API</p>
+                            <ul>
+                                <li class="fragment">Devices that can use it, should use it</li>
+                                <li class="fragment">Create support where possible but not native</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>The MWF Strategy</h2>
+                        <p class="fragment"><strong>Semantic markup standard</strong></p>
+                        <ul class="fragment">
+                            <li>Leverage framework features through classes and ids</li>
+                        </ul>
+                        <p class="fragment"><strong>Dynamic CSS and Javascript</strong></p>
+                        <ul>
+                            <li class="fragment">Enhance and degrade based on device capabilities</li>
+                            <li class="fragment">Included through script and link tags</li>
+                        </ul>
+                        <p class="fragment"><strong>Platform independence</strong> and <strong>federation</strong></p>
+                        <ul class="fragment">
+                            <li>Intrinsic to the technology stack</li>
+                        </ul>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <div class="feature" style="margin-top: 200px;">
+                            <h2>The Mobile Web Framework</h2>
+                            <p></p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Getting Started</h2>
+                        <p class="fragment">Create a page with script and link tag:</p>
+                        <pre class="fragment"><code lang="html">&lt;link rel="stylesheet" type="text/css" <strong>href=”http://[DOMAIN]/assets/css.php"</strong>&gt;
+&lt;script type="text/javascript" <strong>src=“http://[DOMAIN]/assets/js.php</strong>”&gt;&lt;/script&gt;</code></pre>
+                        <p class="fragment">Start using the MWF!</p>
+                        <ul>
+                            <li class="fragment">All HTML classes/ids and JS core always available</li>
+                            <li class="fragment">Additional libraries available on demand</li>
+                            <li class="fragment">Special assets like compressors</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>But really, what's going on?</h2>
+                        <p class="fragment">An app has a page with MWF handlers</p>
+                        <p class="fragment">When a user visits the page,</p>
+                        <ul>
+                            <li class="fragment">the user's browser requests css.php and js.php</li>
+                            <li class="fragment">the MWF gathers telemetry on the device</li>
+                            <li class="fragment">the MWF classifies device and generates CSS/JS</li>
+                            <li class="fragment">the page is rendered from generated CSS/JS</li>
+                        </ul>
+                        <p class="fragment">Process is transparent to the app (semantic markup)</p>
+                    </section>
+                    <section>
+                        <h2>What's in the MWF?</h2>
+                        <ul>
+                            <li class="fragment"><strong>Page-level UI</strong>: header, footer</li>
+                            <li class="fragment"><strong>Content-level UI</strong>: content, menu, button, form, message</li>
+                            <li class="fragment"><strong>Telemetry</strong>: capability exposure and visibility controls</li>
+                            <li class="fragment"><strong>Interaction</strong>: transitions, touch transitions, geolocation</li>
+                            <li class="fragment"><strong>Compression</strong>: CSS, JS, images</li>
+                            <li class="fragment"><strong>Utilities</strong>: normalization, redirection</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <div class="feature" style="margin-top: 180px;">
+                            <h2>Demo</h2>
+                            <p>The Mobile Web Framework in Action</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="feature" style="margin-top: 150px;">
+                            <h2>Learn More</h2>
+                            <p class="fragment"><a href="http://mwf.ucla.edu" target="_blank">http://mwf.ucla.edu</a></p>
+                            <p class="fragment"><a href="http://mwf.ucla.edu/framework13/doc" target="_blank">http://mwf.ucla.edu/framework13/doc</a></p>
+                        </div>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <div class="feature" style="margin-top: 180px;">
+                            <h2>CENIC-hosted MWF</h2>
+                            <p>Framework-as-a-service</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Federated Model</h2>
+                        <p class="fragment">One framework server, many applications</p>
+                        <ul>
+                            <li class="fragment">Service provider hosts framework centrally</li>
+                            <li class="fragment">Distributed applications can leverage framework</li>
+                        </ul>
+                        <p class="fragment">Traditionally, hosted on campus</p>
+                        <ul>
+                            <li class="fragment">Browser-side state maintenance</li>
+                            <li class="fragment">Easy to implement redundancy and load balancing</li>
+                        </ul>
+                        <p class="fragment">But what about off-campus redundancy?</p>
+                    </section>
+                    <section>
+                        <h2>MWF hosted at CENIC</h2>
+                        <p class="fragment">"Corporation for Education Network Initiatives in California"</p>
+                        <p class="fragment">Pilot with UC to host the MWF</p>
+                        <ul>
+                            <li class="fragment">Copy of framework run in AWS infrastructure</li>
+                            <li class="fragment">Affords extra redundancy and scalability</li>
+                            <li class="fragment">Working on model for automated deployment</li>
+                        </ul>
+                        <p class="fragment">Model allows it to be <span class="highlight">transparent for apps</span></p>
+                    </section>
+                    <section>
+                        <h2>How does it work?</h2>
+                        <p class="fragment">CSS and JS handlers as usual</p>
+                        <pre class="fragment"><code lang="html">&lt;link rel="stylesheet" type="text/css" <strong>href=”http://[DOMAIN]/assets/css.php"</strong>&gt;
+&lt;script type="text/javascript" <strong>src=“http://[DOMAIN]/assets/js.php</strong>”&gt;&lt;/script&gt;</code></pre>
+                        <p class="fragment">And that's it!</p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <div class="feature" style="margin-top: 180px;">
+                            <h2>WebBlocks</h2>
+                            <p>A Responsive Approach</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Changing Demographic, New Strategies</h2>
+                        <p class="fragment">Fully-capable mobile devices are becoming more pervasive</p>
+                        <p class="fragment">Changing perceptions of how mobile is used</p>
+                        <p class="fragment">Responsive design is now a viable strategy</p>
+                        <ul>
+                            <li class="fragment"><span class="highlight">Fluid grid and media</span> scale to fit viewports</li>
+                            <li class="fragment"><span class="highlight">Media queries</span> allow different content flows</li>
+                        </ul>
+                        <p class="fragment">Adapting MWF for responsive is the wrong route</p>
+                        <p class="fragment">... and thus the WebBlocks responsive toolkit is born</p>
+                    </section>
+                    <section>
+                        <h2>A Tale of Two Frameworks</h2>
+                        <p class="fragment">Many concepts shared between MWF and WebBlocks:</p>
+                        <ul>
+                            <li class="fragment">Device agnosticism</li>
+                            <li class="fragment">Platform independence</li>
+                            <li class="fragment">Federation</li>
+                        </ul>
+                        <p class="fragment">Use cases drive what works for you:</p>
+                        <ul>
+                            <li class="fragment">Who's your intended demographic?</li>
+                            <li class="fragment">Do you have an existing website? Are you rewriting it?</li>
+                            <li class="fragment">What frameworks are you currently using?</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Staying Flexible with a Toolkit</h2>
+                        <p class="fragment">A lot of good tools already exist</p>
+                        <ul>
+                            <li class="fragment">Extend and integrate, don't recreate</li>
+                        </ul>
+                        <p class="fragment">Not every use case is the same</p>
+                        <ul>
+                            <li class="fragment">Federated or individual deployments?</li>
+                            <li class="fragment">Which tools do you need?</li>
+                            <li class="fragment">What if you're already using a framework?</li>
+                        </ul>
+                        <p class="fragment">Architecture of packages, adapters and extensions</p>
+                    </section>
+                    <section>
+                        <h2>Features</h2>
+                        <p class="fragment">Modern web standards such as media query</p>
+                        <p class="fragment">Powerful fluid layout system</p>
+                        <p class="fragment">Rich UI element and interactivity libraries</p>
+                        <p class="fragment">Customized builds exactly for needs</p>
+                        <p class="fragment">Adapters to bind to other frameworks</p>
+                        <p class="fragment">Extensions for campus and unit specific needs</p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <div class="feature" style="margin-top: 180px;">
+                            <h2>App Sharing Environment</h2>
+                            <p>A Federated Web App Portal</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Conundrum of Growth</h2>
+                        <p class="fragment">At first, we built obvious campus-wide apps</p>
+                        <p class="fragment">But then, we started getting niche apps</p>
+                        <ul>
+                            <li class="fragment">By instructors for class material</li>
+                            <li class="fragment">Research and data collection tools</li>
+                            <li class="fragment">Student-focused and student-written</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Distributing the Apps</h2>
+                        <p class="fragment">How do we organize this growth of apps?</p>
+                        <ul>
+                            <li class="fragment">Taxonomy is hard</li>
+                            <li class="fragment">People want choice</li>
+                        </ul>
+                        <p class="fragment">For native, there's the app store</p>
+                        <ul>
+                            <li class="fragment">Over 60 billion downloads between iOS &amp; Android</li>
+                        </ul>
+                        <p class="fragment">But what about mobile web apps?</p>
+                    </section>
+                    <section>
+                        <h2>A Familiar Pattern</h2>
+                        <table>
+                            <tr>
+                                <td class="fragment"><img src="img/homepage-ucla.jpg"></td>
+                                <td class="fragment"><img src="img/homepage-ucsd.jpg"></td>
+                                <td class="fragment"><img src="img/homepage-ucsf.jpg"></td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Going Further: Openness</h2>
+                        <p class="fragment">Not every app is campus-specific</p>
+                        <p class="fragment">We could &quot;tell&quot; each other about these apps</p>
+                        <table>
+                            <tr>
+                                <td class="fragment"><img src="img/topology-mesh.jpg"></td>
+                                <td class="fragment"><img src="img/topology-hub.jpg"></td>
+                                <td class="fragment"><img src="img/topology-p2p.jpg"></td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section>
+                        <h2>Dynamics</h2>
+                        <p class="fragment">Propagation</p>
+                        <ul>
+                            <li class="fragment">Import &amp; export rules</li>
+                            <li class="fragment">Filters &amp; transformations</li>
+                        </ul>
+                        <p class="fragment">Flexible Topology</p>
+                        <ul>
+                            <li class="fragment">Federation</li>
+                            <li class="fragment">Asymmetric</li>
+                            <li class="fragment">Web of Trust</li>
+                        </ul>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <div class="feature" style="margin-top: 150px;">
+                            <p>And now onto...</p>
+                            <h2>OPT and Ohmage</h2>
+                            <p>BYOD audience response collection</p>
+                        </div>
+                    </section>
+                </section>
+                
+            </div>
+
+            <!-- The navigational controls UI -->
+            <aside class="controls">
+                <a class="left" href="#">&#x25C4;</a>
+                <a class="right" href="#">&#x25BA;</a>
+                <a class="up" href="#">&#x25B2;</a>
+                <a class="down" href="#">&#x25BC;</a>
+            </aside>
+            <!-- Presentation progress bar -->
+            <div class="progress"><span></span></div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        <script>
+                // Full list of configuration options available here:
+                // https://github.com/hakimel/reveal.js#configuration
+                Reveal.initialize({
+                        controls: true,
+                        progress: true,
+                        history: true,
+                        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+                        // Optional libraries used to extend on reveal.js
+                        dependencies: [
+                                { src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                                { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                                { src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                { src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                { src: 'socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+                                { src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+                        ]
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+/nbproject
+.DS_Store
+.svn
+log/*.log
+tmp/**
+node_modules/
+/nbproject/private/
